@@ -1,0 +1,493 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../images/2203_w039_n003_145_businessdoodle_p1_145.jpg);
+    background-size: 100%;
+    direction: rtl;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+@media (max-width: 576px) {
+    body {
+        background-size: cover;
+        background-position: center;
+        background-attachment: scroll;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 991px) {
+    body {
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    body {
+        background-size: 100%;
+        background-position: center;
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+
+
+
+
+
+/***********************/
+
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.883);
+    z-index: -1;
+}
+
+nav {
+    background-color: rgba(0, 255, 255, 0.166);
+    direction: rtl;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-right: 100px;
+    margin-top: 20px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    margin-top: 30px;
+    margin-left: 50px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+nav ul a {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+nav ul a:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(20, 4, 247, 0.863);
+    color: #dc3545;
+}
+
+p {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+p span {
+    color: red;
+    font-size: 45px;
+}
+
+.container {
+    font-size: 20px;
+    background-color: rgba(95, 158, 160, 0.358);
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.select-label {
+    margin-right: 20px;
+    font-weight: bold;
+
+}
+
+.custom-select {
+    margin-left: 15px;
+    margin-bottom: 50px;
+    background-color: rgba(128, 255, 0, 0.455);
+
+}
+
+.cus-name {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.cus-name input {
+    width: 850px;
+    margin-right: 20px;
+    background-color: rgba(128, 255, 0, 0.418);
+
+}
+
+.cus-add {
+    margin-bottom: 20px;
+    font-weight: bold;
+    margin-left: 19px;
+}
+
+.cus-add-in {
+    width: 450px;
+    background-color: rgba(128, 255, 0, 0.418);
+}
+
+.cus-num {
+    margin-right: 40px;
+    font-weight: bold;
+}
+
+.cus-num-in {
+    width: 270px;
+    background-color: rgba(128, 255, 0, 0.418);
+}
+
+
+.order-field {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.cus-order {
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+textarea {
+    width: 77%;
+    height: 150px;
+    resize: none;
+    margin-bottom: 20px;
+    background-color: rgba(128, 255, 0, 0.349);
+}
+
+
+.notes {
+    margin-bottom: 20px;
+    font-weight: bold;
+    margin-left: 19px;
+}
+
+.cus-notes {
+    width: 450px;
+    background-color: rgba(128, 255, 0, 0.418);
+}
+
+.cus-num {
+    margin-right: 40px;
+    font-weight: bold;
+}
+
+.mandob-select- {
+    width: 260px;
+    background-color: rgba(128, 255, 0, 0.418);
+}
+
+.buttons-group {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.buttons-group button {
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 150px;
+}
+
+.btn1 {
+    background: linear-gradient(135deg, #28a745, #4cd964);
+    color: #fff;
+}
+
+.btn1:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(4, 247, 61, 0.863);
+}
+
+.buttons-group .btn {
+    background: linear-gradient(135deg, #0d6efd, #3d8bfd);
+    color: #fff;
+}
+
+.buttons-group .btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(13, 109, 253, 0.733);
+}
+
+
+.buttons-group button[onclick="cancel()"] {
+    background: linear-gradient(135deg, #dc3545, #ff6b6b);
+}
+
+.buttons-group button[onclick="cancel()"]:hover {
+    box-shadow: 0 8px 20px rgba(253, 13, 89, 0.776)
+}
+
+table {
+    width: 95%;
+    margin: 60px 25px 40px 20px;
+    border-collapse: collapse;
+    background-color: #ffffffd9;
+    border-radius: 12px;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+thead {
+    background: linear-gradient(135deg, #04265a, #3d8bfd);
+    color: #fff;
+}
+
+th,
+td {
+    padding: 14px 12px;
+    text-align: center;
+    border-bottom: 1px solid rgb(40, 89, 162);
+}
+
+tbody tr {
+    background-color: rgba(127, 146, 175, 0.377);
+    font-weight: bold;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* ************************************************* */
+
+/**************************************************
+   MOBILE ONLY – Navbar & Heading Fix
+**************************************************/
+@media (max-width: 575px) {
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        padding: 12px 10px;
+        margin-bottom: 25px;
+    }
+
+    h1 {
+        font-size: 40px;
+        margin: 0;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin: 0;
+        padding: 0;
+        font-size: 14px;
+    }
+
+    nav ul a {
+        padding: 6px 12px;
+        font-size: 18px;
+        border-radius: 20px;
+    }
+
+    nav ul a:hover {
+        transform: none;
+        box-shadow: none;
+    }
+
+    p {
+        font-size: 22px;
+        margin: 15px 10px;
+    }
+
+    p span {
+        font-size: 26px;
+    }
+}
+
+
+
+/**************************************************
+   MOBILE ONLY – Buttons & Table Fix
+**************************************************/
+@media (max-width: 575px) {
+
+    /* ===== Buttons ===== */
+    .buttons-group {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .buttons-group button {
+        width: 100%;
+        min-width: unset;
+        padding: 14px;
+        font-size: 15px;
+        border-radius: 18px;
+    }
+
+    /* إلغاء hover لأن الموبايل مفيهوش hover */
+    .btn1:hover,
+    .buttons-group .btn:hover,
+    .buttons-group button[onclick="cancel()"]:hover {
+        transform: none;
+        box-shadow: none;
+    }
+
+
+
+    /**************************************************
+   MOBILE ONLY – Professional Responsive Table
+**************************************************/
+    @media (max-width: 575px) {
+
+        /* غلاف ذكي للجدول */
+        table {
+            width: 100%;
+            margin: 20px 0;
+            border-radius: 12px;
+            font-size: 13px;
+
+            /* أهم جزء */
+            display: block;
+            overflow-x: auto;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        /* تحسين مظهر التمرير */
+        table::-webkit-scrollbar {
+            height: 6px;
+        }
+
+        table::-webkit-scrollbar-thumb {
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+        }
+
+        table::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        thead {
+            font-size: 13px;
+        }
+
+        th,
+        td {
+            padding: 10px 8px;
+            min-width: 110px;
+            /* يخلي الأعمدة مقروءة */
+        }
+
+        tbody tr {
+            font-weight: 500;
+        }
+    }
+
+
+
+
+
+
+    /**************************************************
+   
+**************************************************/
+    @media (max-width: 575px) {
+
+        /* ترتيب اسم الحقل فوق الإدخال */
+        .cus-name,
+        .cus-add,
+        .cus-num,
+        .notes,
+        .select-label,
+        .order-field {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            gap: 6px;
+            margin-bottom: 18px;
+        }
+
+        /* عرض كامل لكل الحقول */
+        .cus-name input,
+        .cus-add-in,
+        .cus-num-in,
+        .cus-notes,
+        textarea,
+        .custom-select,
+        .mandob-select- {
+            width: 100% !important;
+            padding: 14px 16px;
+            font-size: 15px;
+            border-radius: 16px;
+            border: 1px solid #cfd4da;
+            background-color: #f9f9f9;
+        }
+
+        /* فوكس ناعم زي التطبيقات */
+        .cus-name input:focus,
+        .cus-add-in:focus,
+        .cus-num-in:focus,
+        .cus-notes:focus,
+        textarea:focus,
+        .custom-select:focus,
+        .mandob-select-:focus {
+            outline: none;
+            background-color: #ffffff;
+            border-color: #0d6efd;
+            box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.18);
+        }
+
+        /* تحسين شكل select للموبايل */
+        .custom-select,
+        .mandob-select- {
+            appearance: none;
+            -webkit-appearance: none;
+            background-image:
+                linear-gradient(45deg, transparent 50%, #333 50%),
+                linear-gradient(135deg, #333 50%, transparent 50%);
+            background-position:
+                calc(100% - 18px) 22px,
+                calc(100% - 12px) 22px;
+            background-size: 6px 6px;
+            background-repeat: no-repeat;
+        }
+
+        textarea {
+            height: 130px;
+        }
+    }
+}
