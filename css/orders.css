@@ -1131,7 +1131,6 @@ h1 {
 }
 
 .d-flex .btn:hover {
-    background-color: #04f911;
     color: #002702;
     font-weight: 500
 }
@@ -1590,3 +1589,4 @@ footer .col-md-5 form {
     }
 
 }
+
