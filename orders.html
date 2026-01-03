@@ -1,893 +1,0 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta auther="Emad Mohammad">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/orders.css">
-    <title>TalbatK-Orders</title>
-    <link rel="icon" type="image/x-icon" href="images/10053720.png">
-
-</head>
-
-
-
-<body>
-    <!-- <div class="web-name">
-        <img src="images/10053720.png" class="logo" alt="">
-        <span class="fs-1 fw-bolder">طلباتك أوامر</span>
-    </div>
-    <nav>
-        <ul>
-            <li>
-                <a href="#">الرئيسية</a>
-            </li>
-
-            <li>
-                <a href="#">قسم الوجبات</a>
-            </li>
-            <li>
-                <a href="#sweets">قسم الحلويات</a>
-            </li>
-            <li>
-                <a href="#hot">قسم المشروبات</a>
-            </li>
-            <li>
-                <a href="#fresh">قسم العصائر</a>
-            </li>
-            <li>
-                <a href="about.html">معلومات عنا</a>
-            </li>
-        </ul>
-    </nav> -->
-
-
-
-    <header class="nav-clean">
-        <div class="brand">
-            <img src="images/10053720.png" alt="logo">
-            <span>طلباتك أوامر</span>
-        </div>
-
-        <nav>
-            <a href="#">الرئيسية</a>
-            <a href="#">الوجبات</a>
-            <a href="#sweets">الحلويات</a>
-            <a href="#hot">المشروبات</a>
-            <a href="#fresh">العصائر</a>
-            <a href="about.html">معلومات عنا</a>
-            <a href="index.html">طلبات حرة</a>
-            <a href="#" id="loginBtn">
-                <li>تسجيل / دخول<i class="fa-solid fa-face-grin-stars fa-shake" style="color: #ec0909;"></i></li>
-            </a>
-        </nav>
-    </header>
-
-
-
-
-
-
-
-    <section class="hero-slider">
-        <div class="slider-track">
-            <img src="images/Head to Villa Bistro for your next Sunday Brunch_.jfif" alt="">
-            <img src="images/Best Chicken Biryani Recipe - Cubes N Juliennes.jfif" alt="">
-            <img src="images/Chef Najwa - 🍤🥑🥦🍳 Shrimp Avocado Power Bowl….jfif" alt="">
-            <img src="images/Best Chicken Biryani Recipe - Cubes N Juliennes.jfif" alt="">
-            <img src="images/Maqluba (Makloubeh) with Lamb (Arabic rice dish).jfif" alt="">
-            <img src="images/1_ Cozy Vegetarian Chickpea Stew_ This stew is….jfif" alt="">
-        </div>
-    </section>
-
-    <h1 class="title1">اختار وجبتك المفضلة اليوم</h1>
-
-    <div class="page" id="mainDish">
-        <section class="products">
-            <div class="cards">
-
-                <div class="card">
-                    <img src="images/pizza1.jpg" alt="" class="item">
-                    <h4>بيتزا حجم كبير</h4>
-                    <p class="price" data-price="180">180 جنيه</p>
-
-                    <div class="card-actions">
-                        <input type="number" min="1" value="1" class="qty">
-                        <button class="add-btn">اطلب الان</button>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="images/pizza2.jfif" alt="">
-                    <h4>بيتزا وسط</h4>
-                    <p class="price" data-price="140">140 جنيه</p>
-
-                    <div class="card-actions">
-                        <input type="number" min="1" value="1" class="qty">
-                        <button class="add-btn">اطلب الان</button>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="images/mkrona.jpeg" alt="">
-                    <h4>مكرونة كاربونارا</h4>
-                    <p class="price" data-price="95">95 جنيه</p>
-
-                    <div class="card-actions">
-                        <input type="number" min="1" value="1" class="qty">
-                        <button class="add-btn">اطلب الان</button>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="images/burger.jfif" alt="">
-                    <h4>برجر لحم</h4>
-                    <p class="price" data-price="85">85 جنيه</p>
-
-                    <div class="card-actions">
-                        <input type="number" min="1" value="1" class="qty">
-                        <button class="add-btn">اطلب الان</button>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="images/shwrma.jfif" alt="">
-                    <h4>تشيكن شاورما</h4>
-                    <p class="price" data-price="75">75 جنيه</p>
-
-                    <div class="card-actions">
-                        <input type="number" min="1" value="1" class="qty">
-                        <button class="add-btn">اطلب الان</button>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="images/salad secer.jfif" alt="">
-                    <h4>سلطة سيزر</h4>
-                    <p class="price" data-price="55">55 جنيه</p>
-
-                    <div class="card-actions">
-                        <input type="number" min="1" value="1" class="qty">
-                        <button class="add-btn">اطلب الان</button>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="images/شواية.jfif" alt="">
-                    <h4>فرخة شواية</h4>
-                    <p class="price" data-price="260">260 جنيه</p>
-
-                    <div class="card-actions">
-                        <input type="number" min="1" value="1" class="qty">
-                        <button class="add-btn">اطلب الان</button>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="images/بشميل.jpg" alt="">
-                    <h4>مكرونة بشاميل (قطعة)</h4>
-                    <p class="price" data-price="35">35 جنيه</p>
-
-                    <div class="card-actions">
-                        <input type="number" min="1" value="1" class="qty">
-                        <button class="add-btn">اطلب الان</button>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="images/بروستد.jfif" alt="">
-                    <h4>فرخة بروستد</h4>
-                    <p class="price" data-price="330">330 جنيه</p>
-
-                    <div class="card-actions">
-                        <input type="number" min="1" value="1" class="qty">
-                        <button class="add-btn">اطلب الان</button>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="images/وجبة شيش طاووق.jfif" alt="">
-                    <h4>وجبة شيش طاووق</h4>
-                    <p class="price" data-price="50">50 جنيه</p>
-
-                    <div class="card-actions">
-                        <input type="number" min="1" value="1" class="qty">
-                        <button class="add-btn">اطلب الان</button>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="images/وجبة كفتة.jfif" alt="">
-                    <h4>وجبة 1/4 كفتة</h4>
-                    <p class="price" data-price="45">45 جنيه</p>
-
-                    <div class="card-actions">
-                        <input type="number" min="1" value="1" class="qty">
-                        <button class="add-btn">اطلب الان</button>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="images/وجبة استربس.jfif" alt="">
-                    <h4>وجبة استربس</h4>
-                    <p class="price" data-price="85">85 جنيه</p>
-
-                    <div class="card-actions">
-                        <input type="number" min="1" value="1" class="qty">
-                        <button class="add-btn">اطلب الان</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="new-section" id="sweets">
-            <h2>قسم الحلويات</h2>
-            <p>مرحبًا بكم في قسم الحلويات، حيث نقدم أشهى وألذ الخيارات التي تُضفي لمسة من السعادة على يومكم. في هذا
-                القسم، ستجدون مجموعة متنوعة من الحلويات التقليدية والحديثة، من الكيك والفطائر إلى الشوكولاتة والمخبوزات
-                الطازجة، جميعها محضرة بعناية فائقة وبأفضل المكونات لضمان الجودة والطعم الرائع. هدفنا هو تلبية رغباتكم
-                بكل دقة، سواء لتناولها مع العائلة أو تقديمها كهدية مميزة. نحرص على أن تصل كل قطعة بأمان وبأجمل شكل،
-                لتستمتعوا بتجربة لا تُنسى من النكهات الغنية والابتكارات المميزة في عالم الحلويات.</p>
-        </section>
-
-        <div class="page">
-            <section class="products">
-                <div class="cards">
-
-                    <div class="card">
-                        <img src="images/كيكة الشوكولاتة الصغيرة.jfif" alt="">
-                        <h4>كيكة الشوكولاتة الصغيرة</h4>
-                        <p class="price" data-price="50">50 جنيه</p>
-
-                        <div class="card-actions">
-                            <input type="number" min="1" value="1" class="qty">
-                            <button class="add-btn">اطلب الان</button>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="images/كيكة الفانيليا.jfif" alt="">
-                        <h4>كيكة الفانيليا</h4>
-                        <p class="price" data-price="45">45 جنيه</p>
-
-                        <div class="card-actions">
-                            <input type="number" min="1" value="1" class="qty">
-                            <button class="add-btn">اطلب الان</button>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="images/تشيز كيك.jpg" alt="">
-                        <h4>تشيز كيك</h4>
-                        <p class="price" data-price="70">70 جنيه</p>
-
-                        <div class="card-actions">
-                            <input type="number" min="1" value="1" class="qty">
-                            <button class="add-btn">اطلب الان</button>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="images/براونيز.jfif" alt="">
-                        <h4>براونيز</h4>
-                        <p class="price" data-price="35">35 جنيه</p>
-
-                        <div class="card-actions">
-                            <input type="number" min="1" value="1" class="qty">
-                            <button class="add-btn">اطلب الان</button>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="images/كوكيز بالشوكولاتة.jfif" alt="">
-                        <h4>كوكيز بالشوكولاتة</h4>
-                        <p class="price" data-price="25">25 جنيه</p>
-
-                        <div class="card-actions">
-                            <input type="number" min="1" value="1" class="qty">
-                            <button class="add-btn">اطلب الان</button>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="images/كنافة بالقشطة.jfif" alt="">
-                        <h4>كنافة بالقشطة</h4>
-                        <p class="price" data-price="55">55 جنيه</p>
-
-                        <div class="card-actions">
-                            <input type="number" min="1" value="1" class="qty">
-                            <button class="add-btn">اطلب الان</button>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="images/جاتوه الفواكه.jfif" alt="">
-                        <h4>جاتوه الفواكه</h4>
-                        <p class="price" data-price="54">65 جنيه</p>
-
-                        <div class="card-actions">
-                            <input type="number" min="1" value="1" class="qty">
-                            <button class="add-btn">اطلب الان</button>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="images/بقلاوة.jfif" alt="">
-                        <h4>بقلاوة</h4>
-                        <p class="price" data-price="30">30 جنيه</p>
-
-                        <div class="card-actions">
-                            <input type="number" min="1" value="1" class="qty">
-                            <button class="add-btn">اطلب الان</button>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="images/تراميسو.jpg" alt="">
-                        <h4>تراميسو</h4>
-                        <p class="price" data-price="75">75 جنيه</p>
-
-                        <div class="card-actions">
-                            <input type="number" min="1" value="1" class="qty">
-                            <button class="add-btn">اطلب الان</button>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="images/كيك رول بالشوكولاتة.jfif" alt="">
-                        <h4>كيك رول بالشوكولاتة</h4>
-                        <p class="price" data-price="50">50 جنيه</p>
-
-                        <div class="card-actions">
-                            <input type="number" min="1" value="1" class="qty">
-                            <button class="add-btn">اطلب الان</button>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="images/ام علي بالمكسرات.jfif" alt="">
-                        <h4>ام علي بالمكسرات</h4>
-                        <p class="price" data-price="45">45 جنيه</p>
-
-                        <div class="card-actions">
-                            <input type="number" min="1" value="1" class="qty">
-                            <button class="add-btn">اطلب الان</button>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="images/وافل نوتيلا.jfif" alt="">
-                        <h4>وافل نوتيلا</h4>
-                        <p class="price" data-price="85">85 جنيه</p>
-
-                        <div class="card-actions">
-                            <input type="number" min="1" value="1" class="qty">
-                            <button class="add-btn">اطلب الان</button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-
-        <section class="new-section" id="hot">
-            <h2>قسم المشروبات الساخنة</h2>
-            <p>في هذا القسم نقدم لك تشكيلة متنوعة من المشروبات الساخنة لتستمتع بها في أي وقت من اليوم. من القهوة العربية
-                والغربية إلى الشاي الأخضر، والقهوة التركية والإسبريسو، كل مشروب محضّر بعناية ليناسب ذوقك ويمنحك دفءً
-                وطاقةً. نحرص على استخدام أفضل المكونات مع الاهتمام بتقديمها بطريقة جذابة لتجربة فريدة مع كل رشفة.</p>
-        </section>
-
-        <div class="page">
-            <section class="products">
-                <div class="cards">
-
-                    <div class="card">
-                        <img src="images/قهوة عربي.jpg" alt="">
-                        <h4>قهوة عربية</h4>
-                        <p class="price" data-price="25">25 جنيه</p>
-
-                        <div class="card-actions">
-                            <input type="number" min="1" value="1" class="qty">
-                            <button class="add-btn">اطلب الان</button>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="images/اسبريسو.jfif" alt="">
-                        <h4>اسبريسو</h4>
-                        <p class="price" data-price="30">30 جنيه</p>
-
-                        <div class="card-actions">
-                            <input type="number" min="1" value="1" class="qty">
-                            <button class="add-btn">اطلب الان</button>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="images/لاتيه.webp" alt="">
-                        <h4>لاتيه</h4>
-                        <p class="price" data-price="35">35 جنيه</p>
-
-                        <div class="card-actions">
-                            <input type="number" min="1" value="1" class="qty">
-                            <button class="add-btn">اطلب الان</button>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="images/كابتشينو.png" alt="">
-                        <h4>كابتشينو</h4>
-                        <p class="price" data-price="35">35 جنيه</p>
-
-                        <div class="card-actions">
-                            <input type="number" min="1" value="1" class="qty">
-                            <button class="add-btn">اطلب الان</button>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="images/شاي اخضر.webp" alt="">
-                        <h4>شاي أخضر</h4>
-                        <p class="price" data-price="20">20 جنيه</p>
-
-                        <div class="card-actions">
-                            <input type="number" min="1" value="1" class="qty">
-                            <button class="add-btn">اطلب الان</button>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="images/شاي اسود.jpg" alt="">
-                        <h4>شاي أسود</h4>
-                        <p class="price" data-price="15">15 جنيه</p>
-
-                        <div class="card-actions">
-                            <input type="number" min="1" value="1" class="qty">
-                            <button class="add-btn">اطلب الان</button>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="images/شوكولاتة ساخنة.jpg" alt="">
-                        <h4>شوكولاتة ساخنة</h4>
-                        <p class="price" data-price="40">40 جنيه</p>
-
-                        <div class="card-actions">
-                            <input type="number" min="1" value="1" class="qty">
-                            <button class="add-btn">اطلب الان</button>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="images/موكا.jpg" alt="">
-                        <h4>موكا</h4>
-                        <p class="price" data-price="40">40 جنيه</p>
-
-                        <div class="card-actions">
-                            <input type="number" min="1" value="1" class="qty">
-                            <button class="add-btn">اطلب الان</button>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="images/فرنسي.webp" alt="">
-                        <h4>قهوة فرنسية</h4>
-                        <p class="price" data-price="50">50 جنيه</p>
-
-                        <div class="card-actions">
-                            <input type="number" min="1" value="1" class="qty">
-                            <button class="add-btn">اطلب الان</button>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="images/اعشاب.jfif" alt="">
-                        <h4>شاي أعشاب</h4>
-                        <p class="price" data-price="15">25 جنيه</p>
-
-                        <div class="card-actions">
-                            <input type="number" min="1" value="1" class="qty">
-                            <button class="add-btn">اطلب الان</button>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="images/ينسون.jpg" alt="">
-                        <h4>ينســون</h4>
-                        <p class="price" data-price="15">25 جنيه</p>
-
-                        <div class="card-actions">
-                            <input type="number" min="1" value="1" class="qty">
-                            <button class="add-btn">اطلب الان</button>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="images/سحلب.jfif" alt="">
-                        <h4>سحلـب</h4>
-                        <p class="price" data-price="15">25 جنيه</p>
-
-                        <div class="card-actions">
-                            <input type="number" min="1" value="1" class="qty">
-                            <button class="add-btn">اطلب الان</button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-
-
-
-        <section class="new-section">
-            <h2>قسم العصائر</h2>
-            <p>فيقدّم هذا القسم مجموعة من العصائر الطبيعية الطازجة والمنعشة التي تمنح الجسم الطاقة والحيوية. من عصير
-                البرتقال والتفاح إلى المانجو والجوافة، كل عصير يُحضّر بعناية لضمان الطعم الطبيعي والفوائد الصحية.
-                عصائرنا مناسبة لجميع الأعمار وتضفي لمسة منعشة على يومك.</p>
-        </section>
-
-        <div class="page" id="fresh">
-            <section class="products">
-                <div class="cards">
-
-                    <div class="card">
-                        <img src="images/عصير برتقال طازج.webp" alt="">
-                        <h4>عصير برتقال طازج</h4>
-                        <p class="price" data-price="25">25 جنيه</p>
-
-                        <div class="card-actions">
-                            <input type="number" min="1" value="1" class="qty">
-                            <button class="add-btn">اطلب الان</button>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="images/عصير تفاح طازج.jpg" alt="">
-                        <h4>عصير تفاح طازج</h4>
-                        <p class="price" data-price="25">25 جنيه</p>
-
-                        <div class="card-actions">
-                            <input type="number" min="1" value="1" class="qty">
-                            <button class="add-btn">اطلب الان</button>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="images/عصير مانجو طبيعي.jpg" alt="">
-                        <h4>عصير مانجو طبيعي</h4>
-                        <p class="price" data-price="30">30 جنيه</p>
-
-                        <div class="card-actions">
-                            <input type="number" min="1" value="1" class="qty">
-                            <button class="add-btn">اطلب الان</button>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="images/عصير فراولة.jfif" alt="">
-                        <h4>عصير فراولة</h4>
-                        <p class="price" data-price="30">30 جنيه</p>
-
-                        <div class="card-actions">
-                            <input type="number" min="1" value="1" class="qty">
-                            <button class="add-btn">اطلب الان</button>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="images/عصير أناناس.jpg" alt="">
-                        <h4>عصير أناناس</h4>
-                        <p class="price" data-price="30">30 جنيه</p>
-
-                        <div class="card-actions">
-                            <input type="number" min="1" value="1" class="qty">
-                            <button class="add-btn">اطلب الان</button>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="images/عصير جوافة.jfif" alt="">
-                        <h4>عصير جوافة</h4>
-                        <p class="price" data-price="25">25 جنيه</p>
-
-                        <div class="card-actions">
-                            <input type="number" min="1" value="1" class="qty">
-                            <button class="add-btn">اطلب الان</button>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="images/عصير موز بالحليب.jfif" alt="">
-                        <h4>عصير موز بالحليب</h4>
-                        <p class="price" data-price="35">35 جنيه</p>
-
-                        <div class="card-actions">
-                            <input type="number" min="1" value="1" class="qty">
-                            <button class="add-btn">اطلب الان</button>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="images/عصيركيوي.jfif" alt="">
-                        <h4>عصير كيوي</h4>
-                        <p class="price" data-price="40">40 جنيه</p>
-
-                        <div class="card-actions">
-                            <input type="number" min="1" value="1" class="qty">
-                            <button class="add-btn">اطلب الان</button>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="images/كوكتيل فواكه طبيعي.jpg" alt="">
-                        <h4>كوكتيل فواكه طبيعي</h4>
-                        <p class="price" data-price="45">45 جنيه</p>
-
-                        <div class="card-actions">
-                            <input type="number" min="1" value="1" class="qty">
-                            <button class="add-btn">اطلب الان</button>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="images/كوكا.webp" alt="">
-                        <h4>كوكاكولا</h4>
-                        <p class="price" data-price="20">20 جنيه</p>
-
-                        <div class="card-actions">
-                            <input type="number" min="1" value="1" class="qty">
-                            <button class="add-btn">اطلب الان</button>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="images/بيريل.jpg" alt="">
-                        <h4>بيريل</h4>
-                        <p class="price" data-price="35">35 جنيه</p>
-
-                        <div class="card-actions">
-                            <input type="number" min="1" value="1" class="qty">
-                            <button class="add-btn">اطلب الان</button>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="images/يدبول.jfif" alt="">
-                        <h4>ريدبول</h4>
-                        <p class="price" data-price="55">55 جنيه</p>
-
-                        <div class="card-actions">
-                            <input type="number" min="1" value="1" class="qty">
-                            <button class="add-btn">اطلب الان</button>
-                        </div>
-                    </div>
-            </section>
-        </div>
-    </div>
-
-    <section class="space"></section>
-
-    <button id="openCart" class="cart-float">
-        🛒 (<span id="cartCount">0</span>)
-    </button>
-
-    <div class="cart-modal" id="cartModal">
-        <div class="cart-box">
-            <span class="close-cart" id="closeCart">&times;</span>
-            <h3>🛒 سلة المشتريات</h3>
-
-            <div class="cart-items"></div>
-
-            <div class="cart-total">
-                الإجمالي: <span id="total">0</span> جنيه
-            </div>
-
-            <button class="confirm-btn">تأكيد الطلب</button>
-        </div>
-    </div>
-
-    <div id="toast" class="toast">تمت إضافة المنتج إلى السلة ✅</div>
-
-
-
-
-
-
-    <!-- Welcome Popup -->
-    <div class="welcome-overlay" id="welcomeOverlay">
-        <div class="welcome-box">
-
-            <img src="images/basket.png" class="welcome-animation" alt="welcome">
-
-            <h2>أهلاً وسهلاً بيك</h2>
-
-            <p>
-                في <strong>طلباتك أوامر</strong><br>
-                هنا، الطلب مش مجرد اختيار…<br>
-                ده وعد بالراحة، وسرعة في التنفيذ،<br>
-                واهتمام بكل تفصيلة.<br>
-                اطلب اللي محتاجه، وسيب الباقي علينا.
-            </p>
-
-            <button id="closeBtn">ابدأ الطلب</button>
-
-        </div>
-    </div>
-
-    <div class="b-example-divider"></div>
-    <div class="container">
-        <footer class="py-5">
-            <div class="row">
-                <div class="col-6 col-md-2 mb-3">
-                    <h5>أقسامنا</h5>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-2">
-                            <a href="#" class="nav-link p-0 text-body-secondary">الرئيسية</a>
-                        </li>
-                        <li class="nav-item mb-2">
-                            <a href="#" class="nav-link p-0 text-body-secondary">مطاعم براند</a>
-                        </li>
-                        <li class="nav-item mb-2">
-                            <a href="#" class="nav-link p-0 text-body-secondary">تطبيقاتنا</a>
-                        </li>
-                        <li class="nav-item mb-2">
-                            <a href="#" class="nav-link p-0 text-body-secondary">عروضنـــا</a>
-                        </li>
-                        <li class="nav-item mb-2">
-                            <a href="index.html" class="nav-link p-0 text-body-secondary">طلبات حسب اختيارك</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="col-6 col-md-2 mb-3">
-                    <h5>شركاؤنا</h5>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-2">
-                            <a href="#" class="nav-link p-0 text-body-secondary">انضم كمطعم</a>
-                        </li>
-                        <li class="nav-item mb-2">
-                            <a href="#" class="nav-link p-0 text-body-secondary">انضم كتاجر</a>
-                        </li>
-                        <li class="nav-item mb-2">
-                            <a href="#" class="nav-link p-0 text-body-secondary">كن مندوب توصيل</a>
-                        </li>
-                        <li class="nav-item mb-2">
-                            <a href="#" class="nav-link p-0 text-body-secondary">شروط الشراكة</a>
-                        </li>
-                        <li class="nav-item mb-2">
-                            <a href="#" class="nav-link p-0 text-body-secondary">تواصل مع الإدارة</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="col-6 col-md-2 mb-3">
-                    <h5>الدعم والمساعدة</h5>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-2">
-                            <a href="#" class="nav-link p-0 text-body-secondary">مركز المساعدة</a>
-                        </li>
-                        <li class="nav-item mb-2">
-                            <a href="#" class="nav-link p-0 text-body-secondary">الأسئلة الشائعة</a>
-                        </li>
-                        <li class="nav-item mb-2">
-                            <a href="#" class="nav-link p-0 text-body-secondary">سياسة الخصوصية</a>
-                        </li>
-                        <li class="nav-item mb-2">
-                            <a href="#" class="nav-link p-0 text-body-secondary">الشروط والأحكام</a>
-                        </li>
-                        <li class="nav-item mb-2">
-                            <a href="#" class="nav-link p-0 text-body-secondary">الإبلاغ عن مشكلة</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="col-md-5 mb-2">
-                    <form>
-                        <h5>اشترك الان في نشرات عروضنا</h5>
-                        <p>علشان ديما تكون على اطلاع على عروضنا ، اول بأول خليك على اتصال بنا ، هنبعتلك كل
-                            جديد</p>
-                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                            <label for="newsletter1" class="visually-hidden">Email address</label>
-                            <input id="newsletter1" type="email" class="form-control" placeholder="Email address" />
-                            <button class="btn btn-primary" type="button">Subscribe</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-
-
-            <div class="d-flex py-4 my-4 border-top align-items-center justify-content-between">
-
-                <!-- الحقوق – أقصى يسار -->
-                <p class="mb-0 text-start">
-                    &copy; 2025-2026 Emad Multimedia. All rights reserved.
-                </p>
-
-                <!-- الأيقونات – أقصى يمين -->
-                <ul class="footer-social mb-0">
-                    <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-square-threads"></i></a></li>
-                    <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
-                </ul>
-            </div>
-        </footer>
-    </div>
-
-
-    <!-- Popup Overlay -->
-    <div class="auth-overlay" id="authOverlay">
-
-        <div class="auth-popup">
-
-            <!-- Login -->
-            <div class="auth-box is-active" id="auth-login">
-                <h2>تسجيل الدخول</h2>
-                <form>
-                    <label>اسم المستخدم</label>
-                    <input type="text" placeholder="أدخل اسم المستخدم" required>
-
-                    <label>كلمة المرور</label>
-                    <input type="password" placeholder="أدخل كلمة المرور" required>
-
-                    <button class="auth-btn">تسجيل الدخول</button>
-                </form>
-
-                <div class="social-login">
-                    <p>أو سجل عبر:</p>
-                    <div class="social-btn google">Google</div>
-                    <div class="social-btn facebook">Facebook</div>
-                </div>
-
-                <div class="switch-link">
-                    <a href="#" data-switch="signup">مستخدم جديد؟</a> |
-                    <a href="#" data-switch="forgot">نسيت كلمة المرور؟</a>
-                </div>
-            </div>
-
-            <!-- Signup -->
-            <div class="auth-box" id="auth-signup">
-                <h2>إنشاء حساب</h2>
-                <form>
-                    <input class="new" type="text" placeholder="اسم المستخدم" required>
-                    <input class="new" type="email" placeholder="example@mail.com" required>
-                    <input class="new" type="password" placeholder="كلمة المرور" required>
-                    <button class="auth-btn">إنشاء حساب</button>
-                </form>
-
-                <div class="switch-link">
-                    <a href="#" data-switch="login">لديك حساب؟</a>
-                </div>
-            </div>
-
-            <!-- Forgot -->
-            <div class="auth-box" id="auth-forgot">
-                <h2>استعادة كلمة المرور</h2>
-                <form>
-                    <input type="email" placeholder="example@mail.com" required>
-                    <button class="auth-btn">إرسال</button>
-                </form>
-
-                <div class="switch-link">
-                    <a href="#" data-switch="login">العودة لتسجيل الدخول</a>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-
-
-    <script src="js/jquery-3.7.1.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/orders.js"></script>
-    <script src="js/welcome.js"></script>
-    <script src="js/login.js"></script>
-
-</body>
-
-</html>
