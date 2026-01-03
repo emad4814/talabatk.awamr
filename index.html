@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta auther="Emad Mohammad">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/tawsel.css">
+    <title>TalbatK-Awamr</title>
+    <link rel="icon" type="image/x-icon" href="images/10053720.png">
+
+</head>
+
+<body>
+
+    <nav>
+        <div>
+            <a href="">
+                <h1>طلباتك أوامر</h1>
+            </a>
+        </div>
+        <div>
+            <ul>
+                <a href="#" id="loginBtn">
+                    <li>تسجيل / دخول</li>
+                </a>
+
+                <a href="orders.html">
+                    <li>تسجيل طلب</li>
+                </a>
+                <a href="about.html" target="_blank">
+                    <li>معلومات عنـا</li>
+                </a>
+            </ul>
+        </div>
+    </nav>
+    <p>مهما كان طلبك او مكانه ، <span>هنوصله</span> لحد عندك ، <span>بإتقان ، بأمان ، بسرعة.
+            <br>هنا في طلبات حرة ، بنديلك المساحة انك تطلب اللي انت عاوزه من اي مكان و برضو علينا التوصيل .
+        </span></p>
+
+    <div class="container">
+
+        <label for="placeorder" class="select-label">مطاعم :</label>
+        <select id="Selector" name="Resturants" class="custom-select">
+            <option value="" disabled selected hidden>اختر مطعم</option>
+            <optgroup>
+                <option value="كنتاكي">كنتاكي</option>
+                <option value="ماكدونالد">ماكدونالد</option>
+                <option value="الشبراوي">الشبراوي</option>
+                <option value="جــاد">جــاد</option>
+                <option value="كـروان">كـروان</option>
+                <option value="فلفلـة">فلفلـة</option>
+                <option value="اخر ساعة">اخر ساعة</option>
+                <option value="حضر موت">حضر موت</option>
+            </optgroup>
+        </select>
+
+        <label for="placeorder" class="select-label">صيدليات :</label>
+        <select id="pharmacySelect" name="Pharmacy" class="custom-select">
+            <option value="" disabled selected hidden>اختر صيدلية</option>
+            <optgroup>
+                <option value="صيدليات عـز">صيدليات عـز</option>
+                <option value="صيدليات المنوفية">صيدليات المنوفية</option>
+                <option value="صيدليات عمرو الشامي">صيدليات عمرو الشامي</option>
+                <option value="صيدليات الحياة">صيدليات الحياة</option>
+                <option value="صيدليات العزبي">صيدليات العزبي</option>
+                <option value="صيدليات سيف">صيدليات سيف</option>
+                <option value="صيدليات 19011">صيدليات 19011</option>
+                <option value="صيدلية التقوى">صيدلية التقوى</option>
+            </optgroup>
+        </select>
+
+        <label for="placeorder" class="select-label">سوبر ماركت :</label>
+        <select id="supermarketSelect" name="SuperMarket" class="custom-select">
+            <option value="" disabled selected hidden>اختر محــل</option>
+            <optgroup>
+                <option value="فتح الله ماركت">فتح الله ماركت</option>
+                <option value="أولاد رجب">أولاد رجب</option>
+                <option value="مترو ماركت">مترو ماركت</option>
+                <option value="خير زمان">خير زمان</option>
+                <option value="سوبر ماركت الصفا">سوبر ماركت الصفا</option>
+                <option value="سوبر ماركت الأندلس">سوبر ماركت الأندلس</option>
+                <option value="سوبر ماركت أبو زيد">سوبر ماركت أبو زيد</option>
+                <option value="سوبر ماركت الفتح">سوبر ماركت الفتح</option>
+            </optgroup>
+        </select>
+
+        <label for="else..." class="select-label">جديد :</label>
+        <select id="elseSelect" name="else..." class="custom-select">
+            <option value="" disabled selected hidden></option>
+            <optgroup>
+                <option value="">تحت التحديث</option>
+                <option value="">Updating...</option>
+            </optgroup>
+        </select>
+        <div class="cus-name">
+            <label for=""> اســــم العميـــــل</label>
+            <input id="customerName" type="text" placeholder="اسم العميل" required>
+        </div>
+        <div class="cus-add-num">
+            <label for="" class="cus-add">عنــوان العميـــل</label>
+            <input id="customeraddress" type="text" class="cus-add-in" placeholder="عنوان العميل">
+            <label for="" class="cus-num">رقم الموبايل</label>
+            <input id="customerNumber" type="number" class="cus-num-in" placeholder="رقم موبايل العميل">
+        </div>
+        <div class="order-field">
+            <label for="area-1" class="cus-order">طـلــب العميــل</label>
+            <textarea id="areaorder" cols="50" rows="10" placeholder="تسجيل طلب العميل بالتفصيل"></textarea>
+        </div>
+
+        <div>
+            <label class="notes" for="">ملاحظات العميل</label>
+            <input id="customernotes" type="text" class="cus-notes" placeholder="ملاحظات العميل">
+
+            <label for="mandob" class="select-label">مندوب التوصيل :</label>
+            <select id="mandob" name="mandob" class="mandob-select-">
+                <option value="" disabled selected hidden>اختر مندوب التوصيل</option>
+                <optgroup>
+                    <option value="السيد علي">السيد علي</option>
+                    <option value="احمد مسعد">احمد مسعد</option>
+                    <option value="علاء ابراهيم">علاء ابراهيم</option>
+                    <option value="وائل سعد">وائل سعد</option>
+                    <option value="احمد طلبة">احمد طلبة</option>
+                    <option value="محمود اسماعيل">محمود اسماعيل</option>
+                </optgroup>
+            </select>
+        </div>
+    </div>
+    <div class="container mt-2 text-center">
+        <label for="search" class="select-label">ابحث هنا :</label>
+        <input type="search" oninput="search()" class="form-control my-3 w-10 mx-auto" name="" id="search">
+        <hr>
+    </div>
+
+    <div class="buttons-group">
+        <button id="bnt1" class="btn1" onclick="Add()">تأكيد الطلب</button>
+    </div>
+    <hr>
+    <div id="successMsg" class="alert alert-success text-center d-none">
+        ✅ تم إضافة الطلب بنجاح
+    </div>
+
+    <table>
+        <thead>
+            <th>Id</th>
+            <th>مكان الطـلـب</th>
+            <th>اسم العميل</th>
+            <th>الموبايل</th>
+            <th>العنوان</th>
+            <th>الطلــب</th>
+            <th>مندوب التوصيل</th>
+            <th>Action</th>
+        </thead>
+        <tbody id="tableBody">
+        </tbody>
+    </table>
+
+
+    <div class="b-example-divider"></div>
+    <div class="container-1">
+        <footer class="py-5">
+            <div class="row">
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>أقسامنا</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-body-secondary">الرئيسية</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-body-secondary">مطاعم براند</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-body-secondary">تطبيقاتنا</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-body-secondary">عروضنـــا</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="index.html" class="nav-link p-0 text-body-secondary">طلبات حسب اختيارك</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>شركاؤنا</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-body-secondary">انضم كمطعم</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-body-secondary">انضم كتاجر</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-body-secondary">كن مندوب توصيل</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-body-secondary">شروط الشراكة</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-body-secondary">تواصل مع الإدارة</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>الدعم والمساعدة</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-body-secondary">مركز المساعدة</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-body-secondary">الأسئلة الشائعة</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-body-secondary">سياسة الخصوصية</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-body-secondary">الشروط والأحكام</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-body-secondary">الإبلاغ عن مشكلة</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-5 mb-2">
+                    <form>
+                        <h5>اشترك الان في نشرات عروضنا</h5>
+                        <p>علشان ديما تكون على اطلاع على عروضنا ، اول بأول خليك على اتصال بنا ، هنبعتلك كل
+                            جديد</p>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                            <label for="newsletter1" class="visually-hidden">Email address</label>
+                            <input id="newsletter1" type="email" class="form-control" placeholder="Email address" />
+                            <button class="btn btn-primary" type="button">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="d-flex py-4 my-4 border-top justify-content-center">
+                    <p class="mb-0 text-start">
+                        &copy; 2025-2026 Emad Multimedia. All rights reserved.
+                    </p>
+                    <ul class="footer-social mb-0">
+                        <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-square-threads"></i></a></li>
+                        <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- Popup Overlay -->
+    <div class="auth-overlay" id="authOverlay">
+
+        <div class="auth-popup">
+
+            <!-- Login -->
+            <div class="auth-box is-active" id="auth-login">
+                <h2>تسجيل الدخول</h2>
+                <form>
+                    <label>اسم المستخدم</label>
+                    <input type="text" placeholder="أدخل اسم المستخدم" required>
+
+                    <label>كلمة المرور</label>
+                    <input type="password" placeholder="أدخل كلمة المرور" required>
+
+                    <button class="auth-btn">تسجيل الدخول</button>
+                </form>
+
+                <div class="social-login">
+                    <p>أو سجل عبر:</p>
+                    <div class="social-btn google">Google</div>
+                    <div class="social-btn facebook">Facebook</div>
+                </div>
+
+                <div class="switch-link">
+                    <a href="#" data-switch="signup">مستخدم جديد؟</a> |
+                    <a href="#" data-switch="forgot">نسيت كلمة المرور؟</a>
+                </div>
+            </div>
+
+            <!-- Signup -->
+            <div class="auth-box" id="auth-signup">
+                <h2>إنشاء حساب</h2>
+                <form>
+                    <input class="new" type="text" placeholder="اسم المستخدم" required>
+                    <input class="new" type="email" placeholder="example@mail.com" required>
+                    <input class="new" type="password" placeholder="كلمة المرور" required>
+                    <button class="auth-btn">إنشاء حساب</button>
+                </form>
+
+                <div class="switch-link">
+                    <a href="#" data-switch="login">لديك حساب؟</a>
+                </div>
+            </div>
+
+            <!-- Forgot -->
+            <div class="auth-box" id="auth-forgot">
+                <h2>استعادة كلمة المرور</h2>
+                <form>
+                    <input type="email" placeholder="example@mail.com" required>
+                    <button class="auth-btn">إرسال</button>
+                </form>
+
+                <div class="switch-link">
+                    <a href="#" data-switch="login">العودة لتسجيل الدخول</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/tawsel.js"></script>
+    <script src="js/login.js"></script>
+
+</body>
+
+</html>
